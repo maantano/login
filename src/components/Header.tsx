@@ -75,7 +75,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [loginUserData, setLoginUserData] = useRecoilState(LoginState);
   const [loginState, setLoginState] = useState(false);
-  const user = loginUserData?.user; // UserCredential에서 user 속성 가져오기
+  const user = loginUserData?.user;
 
   const sessionUserData = () => {
     for (const key of Object.keys(sessionStorage)) {
