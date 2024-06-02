@@ -94,8 +94,6 @@ export default function Header() {
     if (userData) {
       setLoginState(true);
       setLoginUserData((prevState) => {
-        console.log("prevState ====>", prevState);
-        console.log("main ====>", prevState);
         return { ...prevState, ...userData };
       });
     }
