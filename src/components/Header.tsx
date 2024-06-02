@@ -97,8 +97,12 @@ export default function Header() {
         return { ...prevState, ...userData };
       });
     }
-    console.log(loginUserData);
   }, []);
+
+  const list = () => {
+    console.log("list () call");
+  };
+
   // useMemo(() => {
   //   console.log("loginState ====>", loginState.user);
   // }, [loginState]);
