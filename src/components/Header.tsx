@@ -95,6 +95,7 @@ export default function Header() {
       setLoginState(true);
       setLoginUserData((prevState) => {
         console.log("prevState ====>", prevState);
+        console.log("list branch ====>");
         return { ...prevState, ...userData };
       });
     }
