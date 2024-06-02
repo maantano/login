@@ -97,11 +97,13 @@ export default function Header() {
         return { ...prevState, ...userData };
       });
     }
-    console.log(loginUserData);
   }, []);
 
-  const list = () => {
-    console.log("list () call");
+  const list1 = () => {
+    console.log("list1 () call");
+  };
+  const list1_2 = () => {
+    console.log("list1_2 () call");
   };
 
   const dev1 = () => {
