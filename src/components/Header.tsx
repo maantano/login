@@ -99,6 +99,11 @@ export default function Header() {
     }
     console.log(loginUserData);
   }, []);
+
+  const list = () => {
+    console.log("list () call");
+  };
+
   const dev = () => {
     console.log("dev branch");
   };
