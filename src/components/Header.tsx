@@ -83,6 +83,7 @@ export default function Header() {
         return JSON.parse(sessionStorage.getItem(key) as any);
       }
     }
+    console.log("list2");
     return;
   };
   useEffect(() => {
