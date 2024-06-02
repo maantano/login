@@ -104,8 +104,11 @@ export default function Header() {
     console.log("list () call");
   };
 
-  const dev = () => {
-    console.log("dev branch");
+  const dev1 = () => {
+    console.log("dev1 branch");
+  };
+  const dev2 = () => {
+    console.log("dev2 branch");
   };
   // useMemo(() => {
   //   console.log("loginState ====>", loginState.user);
