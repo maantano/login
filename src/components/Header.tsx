@@ -90,7 +90,7 @@ export default function Header() {
 
   useEffect(() => {
     const userData = sessionUserData();
-    console.log("userData ===>", userData);
+
     if (userData) {
       setLoginState(true);
       setLoginUserData((prevState) => {
