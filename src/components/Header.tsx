@@ -93,9 +93,8 @@ export default function Header() {
     console.log("userData ===>", userData);
     if (userData) {
       setLoginState(true);
-      // setLoginUserData(userData);
       setLoginUserData((prevState) => {
-        // Object.assign would also work
+        console.log("prevState ====>", prevState);
         return { ...prevState, ...userData };
       });
     }
