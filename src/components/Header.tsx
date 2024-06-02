@@ -76,8 +76,7 @@ export default function Header() {
   const [loginUserData, setLoginUserData] = useRecoilState(LoginState);
   const [loginState, setLoginState] = useState(false);
   const user = loginUserData?.user; // UserCredential에서 user 속성 가져오기
-  // console.log("user ====>", user);
-  // console.log("Object.keys(sessionStorage) ===>", Object.keys(sessionStorage));
+
   const sessionUserData = () => {
     for (const key of Object.keys(sessionStorage)) {
       if (key.includes("firebase:authUser:")) {
@@ -86,15 +85,8 @@ export default function Header() {
     }
     return;
   };
-  // const setLoginUserData = useSetRecoilState(userInfo);
-
   useEffect(() => {
     const userData = sessionUserData();
-<<<<<<< HEAD
-    console.log("userData ===>", userData);
-=======
-
->>>>>>> 2f8be0f512e55ae42106eb2f3a36e134a464bfdf
     if (userData) {
       setLoginState(true);
       setLoginUserData((prevState) => {
