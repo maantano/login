@@ -99,29 +99,6 @@ export default function Header() {
     }
   }, []);
 
-  const list1 = () => {
-    console.log("list1 () call");
-  };
-  const list1_2 = () => {
-    console.log("list1_2 () call");
-  };
-
-  const dev1 = () => {
-    console.log("dev1 branch");
-  };
-  const dev2 = () => {
-    console.log("dev2 branch");
-  };
-  // useMemo(() => {
-  //   console.log("loginState ====>", loginState.user);
-  // }, [loginState]);
-
-  const list2_1 = () => {
-    console.log("list2_1 call");
-  };
-  const list2_2 = () => {
-    console.log("list2_2 call");
-  };
   return (
     <header className="bg-white">
       <nav
