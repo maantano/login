@@ -111,8 +111,11 @@ export default function Header() {
   //   console.log("loginState ====>", loginState.user);
   // }, [loginState]);
 
-  const list2 = () => {
-    console.log("list2 call");
+  const list2_1 = () => {
+    console.log("list2_1 call");
+  };
+  const list2_2 = () => {
+    console.log("list2_2 call");
   };
   return (
     <header className="bg-white">
