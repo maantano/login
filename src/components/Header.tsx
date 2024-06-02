@@ -97,6 +97,7 @@ export default function Header() {
         return { ...prevState, ...userData };
       });
     }
+    console.log(loginUserData);
   }, []);
 
   const list = () => {
