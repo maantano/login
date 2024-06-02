@@ -82,6 +82,7 @@ export default function Header() {
       if (key.includes("firebase:authUser:")) {
         return JSON.parse(sessionStorage.getItem(key) as any);
       }
+      console.log("dev");
     }
     return;
   };
