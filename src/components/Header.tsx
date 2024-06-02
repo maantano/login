@@ -104,9 +104,16 @@ export default function Header() {
     console.log("list () call");
   };
 
+  const dev = () => {
+    console.log("dev branch");
+  };
   // useMemo(() => {
   //   console.log("loginState ====>", loginState.user);
   // }, [loginState]);
+
+  const list2 = () => {
+    console.log("list2 call");
+  };
   return (
     <header className="bg-white">
       <nav
